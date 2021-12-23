@@ -1,11 +1,9 @@
 /*Variables*/
-/*Estilos - Header - NavBar*/
-/*Estilos sass*/
-/*Partials*/
+/*Partials totales */
 .header {
   font-size: 1.29rem; }
 
-/*Nesting del & y usando */
+/*Nesting del & y usando hover*/
 .header__img {
   height: 4.2rem;
   border-radius: 5rem;
@@ -144,5 +142,3 @@
 /*PRODUCTOS HTML*/
 body {
   margin: 0; }
-
-/*Productos*/
