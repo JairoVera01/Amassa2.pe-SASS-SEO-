@@ -156,3 +156,29 @@ body {
 .btn__1, .btn__2, .btn__3 {
   text-decoration: underline;
   letter-spacing: 0.05rem; }
+
+/*$redes:(
+    facebook--logo:#3b5998,
+    twitter--logo:#55acee,
+    google--logo:#dd4b39,
+    instagram--logo:#ac2bac,
+    linkedin--logo:#0082ca,
+    github--logo:#333333
+);*/
+.facebook--logo {
+  background-color: #3b5998; }
+
+.twitter--logo {
+  background-color: #55acee; }
+
+.google--logo {
+  background-color: #dd4b39; }
+
+.instagram--logo {
+  background-color: #ac2bac; }
+
+.linkedin--logo {
+  background-color: #0082ca; }
+
+.github--logo {
+  background-color: #333333; }
