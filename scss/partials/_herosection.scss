@@ -1,7 +1,6 @@
 /*Estilos - Hero Section*/
-.hero{
-    height: $hero-height-vh;
-    background-image: url("../assets/resources/fondo_hero.jpg");
+/*Uso ded mixis*/
+@mixin hero-configuracion {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,6 +8,12 @@
     align-items: center;
     position: relative;
     z-index: 2; /*Para ordenar div - suerponer uno por otro */
+}
+
+.hero{
+    height: $hero-height-vh;
+    background-image: url("../assets/resources/fondo_hero.jpg");
+    @include hero-configuracion();
 }
 
 .hero__contenedor{
@@ -25,7 +30,20 @@
 }
 
 .btn__compra{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+/*Uso de extends*/
+
+.btn__mensaje{
+    @extend.btn__compra;
+    color: green;
+}
+
+.btn__precios{
+    @extend.btn__compra;
+    color: blue;
 }
 
 .hero{

@@ -1,11 +1,23 @@
-.container__ola {
+/*Uso ded mixis*/
+@mixin container-configuracion {
     height: 380px;
-    background: $color-principal;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@mixin waves-config {
+    bottom: -135px;
+    height: 527px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.container__ola {
+    background: $color-principal;
+    @include container-configuracion();
 }
 
 .content__ola {
@@ -19,12 +31,10 @@
     padding-left: 0px;
     z-index: 3;
 }
+
 .waves {
-    position: absolute;
-    bottom: -135px;
-    height: 527px;
     width: 100%;
-    overflow: hidden;
+    @include waves-config();
 }
 
 .wave {

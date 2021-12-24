@@ -43,9 +43,10 @@
   100% {
     opacity: 1; } }
 
+/*Uso ded mixis*/
 .container__ola {
-  height: 380px;
   background: #E3BC91;
+  height: 380px;
   position: relative;
   display: flex;
   align-items: center;
@@ -63,10 +64,10 @@
   z-index: 3; }
 
 .waves {
-  position: absolute;
+  width: 100%;
   bottom: -135px;
   height: 527px;
-  width: 100%;
+  position: absolute;
   overflow: hidden; }
 
 .wave {
@@ -98,6 +99,7 @@
     transform: translate(160px, -60px); } }
 
 /*Estilos - Hero Section*/
+/*Uso ded mixis*/
 .hero {
   height: 70vh;
   background-image: url("../assets/resources/fondo_hero.jpg");
@@ -120,8 +122,16 @@
   font-size: 3.5rem;
   margin-bottom: 3rem; }
 
-.btn__compra {
-  font-size: 1.5rem; }
+.btn__compra, .btn__mensaje, .btn__precios {
+  font-size: 1.2rem;
+  margin-top: 0.2rem; }
+
+/*Uso de extends*/
+.btn__mensaje {
+  color: green; }
+
+.btn__precios {
+  color: blue; }
 
 .hero {
   -webkit-animation: bg-pan-top 60s both;
@@ -142,3 +152,7 @@
 /*PRODUCTOS HTML*/
 body {
   margin: 0; }
+
+.btn__1, .btn__2, .btn__3 {
+  text-decoration: underline;
+  letter-spacing: 0.05rem; }
